@@ -62,7 +62,7 @@ describe('HashMap', function () {
             inputButton.type = 'button';
             chai.assert.isFalse(HashMap.isFormInput(inputButton));
             chai.assert.isFalse(HashMap.isFormInput(button));
-        })
+        });
     });
 
     describe('isForm()', function () {

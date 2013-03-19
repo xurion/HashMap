@@ -87,14 +87,14 @@ var HashMap;
 
             //if values is a form element, get the values from the form fields
             if (this.isForm(values)) {
-                 formFields = this.getFieldsFromForm(values);
-                 formValues = {};
-                 for (i = 0; i < formFields.length; i = i + 1) {
-                     if (formFields[i].name !== '') {
+                formFields = this.getFieldsFromForm(values);
+                formValues = {};
+                for (i = 0; i < formFields.length; i = i + 1) {
+                    if (formFields[i].name !== '') {
                         formValues[formFields[i].name] = formFields[i].value;
-                     }
-                 }
-                 values = formValues;
+                    }
+                }
+                values = formValues;
             }
 
             //loop through the values and construct the has string
