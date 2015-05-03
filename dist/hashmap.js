@@ -1,8 +1,6 @@
-/*jslint maxerr: 50, indent: 4*/
-/*globals */
-
 var HashMap;
 (function () {
+
     'use strict';
 
     HashMap = {
@@ -18,7 +16,7 @@ var HashMap;
             }
 
             //strip the initial hash from the string
-            hash = (hash.charAt(0) === '#') ? hash.substr(1) : hash;
+            hash = hash.charAt(0) === '#' ? hash.substr(1) : hash;
 
             //split the hash into separate key/value pairs by ampersands
             splitHash = hash.split('&');
@@ -45,14 +43,14 @@ var HashMap;
         },
 
         isForm: function (element) {
-            return (this.isElement(element) && element.tagName === 'FORM');
+            return this.isElement(element) && element.tagName === 'FORM';
         },
 
         isFormInput: function (element) {
             if (element === undefined) {
                 return false;
             }
-            return (element.nodeName === 'INPUT' && (element.type === 'text' || element.type === 'radio' || element.type === 'checkbox')) || element.nodeName === 'TEXTAREA';
+            return element.nodeName === 'INPUT' && (element.type === 'text' || element.type === 'radio' || element.type === 'checkbox') || element.nodeName === 'TEXTAREA';
         },
 
         getFieldsFromForm: function (form) {
