@@ -1,5 +1,7 @@
 #HashMap
 
+[![Build Status](https://travis-ci.org/xurion/HashMap.svg?branch=master)](https://travis-ci.org/xurion/HashMap)
+
 JavaScript helper to construct/deconstruct URL hashmaps.
 
 ## Examples
